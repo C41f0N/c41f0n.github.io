@@ -29574,7 +29574,7 @@ for(;;)switch(s){case 0:o=A.la()
 if(o==null)throw A.e(A.cu("Not authenticated"))
 p=t.N
 s=3
-return A.q(A.is(A.vq(A.dj("https://us-central1-portfolio-sarim.cloudfunctions.net/photography",0,null),A.ak(["X-User-Id",o,"Content-Type","application/json"],p,p)),new A.aLp(),t.vX),$async$aLn)
+return A.q(A.is(A.vq(A.dj("https://asia-south1-portfolio-sarim.cloudfunctions.net/photography",0,null),A.ak(["X-User-Id",o,"Content-Type","application/json"],p,p)),new A.aLp(),t.vX),$async$aLn)
 case 3:q=b
 s=1
 break
@@ -29586,7 +29586,7 @@ for(;;)switch(s){case 0:o=A.la()
 if(o==null)throw A.e(A.cu("Not authenticated"))
 p=t.N
 s=3
-return A.q(A.is(A.vq(A.dj("https://us-central1-portfolio-sarim.cloudfunctions.net/posts",0,null),A.ak(["X-User-Id",o,"Content-Type","application/json"],p,p)),new A.aLu(),t.vC),$async$aLs)
+return A.q(A.is(A.vq(A.dj("https://asia-south1-portfolio-sarim.cloudfunctions.net/posts",0,null),A.ak(["X-User-Id",o,"Content-Type","application/json"],p,p)),new A.aLu(),t.vC),$async$aLs)
 case 3:q=b
 s=1
 break
@@ -29598,7 +29598,7 @@ for(;;)switch(s){case 0:o=A.la()
 if(o==null)throw A.e(A.cu("Not authenticated"))
 p=t.N
 s=3
-return A.q(A.is(A.vq(A.dj("https://us-central1-portfolio-sarim.cloudfunctions.net/post?id="+a,0,null),A.ak(["X-User-Id",o,"Content-Type","application/json"],p,p)),new A.aLr(),t.Ph),$async$aLq)
+return A.q(A.is(A.vq(A.dj("https://asia-south1-portfolio-sarim.cloudfunctions.net/post?id="+a,0,null),A.ak(["X-User-Id",o,"Content-Type","application/json"],p,p)),new A.aLr(),t.Ph),$async$aLq)
 case 3:q=c
 s=1
 break
@@ -29610,7 +29610,7 @@ for(;;)switch(s){case 0:o=A.la()
 if(o==null)throw A.e(A.cu("Not authenticated"))
 p=t.N
 s=3
-return A.q(A.is(A.vq(A.dj("https://us-central1-portfolio-sarim.cloudfunctions.net/projects",0,null),A.ak(["X-User-Id",o,"Content-Type","application/json"],p,p)),new A.aLx(),t.QG),$async$aLv)
+return A.q(A.is(A.vq(A.dj("https://asia-south1-portfolio-sarim.cloudfunctions.net/projects",0,null),A.ak(["X-User-Id",o,"Content-Type","application/json"],p,p)),new A.aLx(),t.QG),$async$aLv)
 case 3:q=b
 s=1
 break
@@ -29620,7 +29620,7 @@ aLW(a){var s=0,r=A.y(t.bo),q,p,o,n,m
 var $async$aLW=A.u(function(b,c){if(b===1)return A.v(c,r)
 for(;;)switch(s){case 0:m=A.la()
 if(m==null)throw A.e(A.cu("Not authenticated"))
-p=A.dj("https://us-central1-portfolio-sarim.cloudfunctions.net/likePost",0,null)
+p=A.dj("https://asia-south1-portfolio-sarim.cloudfunctions.net/likePost",0,null)
 o=t.N
 n=A.ak(["X-User-Id",m,"Content-Type","application/json"],o,o)
 s=3
@@ -29634,7 +29634,7 @@ aMs(a){var s=0,r=A.y(t.bo),q,p,o,n,m
 var $async$aMs=A.u(function(b,c){if(b===1)return A.v(c,r)
 for(;;)switch(s){case 0:m=A.la()
 if(m==null)throw A.e(A.cu("Not authenticated"))
-p=A.dj("https://us-central1-portfolio-sarim.cloudfunctions.net/unlikePost",0,null)
+p=A.dj("https://asia-south1-portfolio-sarim.cloudfunctions.net/unlikePost",0,null)
 o=t.N
 n=A.ak(["X-User-Id",m,"Content-Type","application/json"],o,o)
 s=3
@@ -29650,7 +29650,7 @@ for(;;)switch(s){case 0:o=A.la()
 if(o==null)throw A.e(A.cu("Not authenticated"))
 p=t.N
 s=3
-return A.q(A.is(A.vq(A.dj("https://us-central1-portfolio-sarim.cloudfunctions.net/whatsNew?n="+a,0,null),A.ak(["X-User-Id",o,"Content-Type","application/json"],p,p)),new A.aLA(),t.TZ),$async$aLy)
+return A.q(A.is(A.vq(A.dj("https://asia-south1-portfolio-sarim.cloudfunctions.net/whatsNew?n="+a,0,null),A.ak(["X-User-Id",o,"Content-Type","application/json"],p,p)),new A.aLA(),t.TZ),$async$aLy)
 case 3:q=c
 s=1
 break
@@ -29662,7 +29662,7 @@ for(;;)switch(s){case 0:o=A.la()
 if(o==null)throw A.e(A.cu("Not authenticated"))
 p=t.N
 s=3
-return A.q(A.is(A.vq(A.dj("https://us-central1-portfolio-sarim.cloudfunctions.net/homepageConfig",0,null),A.ak(["X-User-Id",o,"Content-Type","application/json"],p,p)),new A.aLj(),t.sl),$async$aLi)
+return A.q(A.is(A.vq(A.dj("https://asia-south1-portfolio-sarim.cloudfunctions.net/homepageConfig",0,null),A.ak(["X-User-Id",o,"Content-Type","application/json"],p,p)),new A.aLj(),t.sl),$async$aLi)
 case 3:q=b
 s=1
 break
@@ -29674,7 +29674,7 @@ for(;;)switch(s){case 0:o=A.la()
 if(o==null)throw A.e(A.cu("Not authenticated"))
 p=t.N
 s=3
-return A.q(A.is(A.vq(A.dj("https://us-central1-portfolio-sarim.cloudfunctions.net/music",0,null),A.ak(["X-User-Id",o,"Content-Type","application/json"],p,p)),new A.aLm(),t.K7),$async$aLk)
+return A.q(A.is(A.vq(A.dj("https://asia-south1-portfolio-sarim.cloudfunctions.net/music",0,null),A.ak(["X-User-Id",o,"Content-Type","application/json"],p,p)),new A.aLm(),t.K7),$async$aLk)
 case 3:q=b
 s=1
 break
@@ -29684,7 +29684,7 @@ aMv(a){var s=0,r=A.y(t.bo),q,p,o,n,m
 var $async$aMv=A.u(function(b,c){if(b===1)return A.v(c,r)
 for(;;)switch(s){case 0:m=A.la()
 if(m==null)throw A.e(A.cu("Not authenticated"))
-p=A.dj("https://us-central1-portfolio-sarim.cloudfunctions.net/viewPost",0,null)
+p=A.dj("https://asia-south1-portfolio-sarim.cloudfunctions.net/viewPost",0,null)
 o=t.N
 n=A.ak(["X-User-Id",m,"Content-Type","application/json"],o,o)
 s=3
@@ -29698,7 +29698,7 @@ aMx(a){var s=0,r=A.y(t.bo),q,p,o,n,m
 var $async$aMx=A.u(function(b,c){if(b===1)return A.v(c,r)
 for(;;)switch(s){case 0:m=A.la()
 if(m==null)throw A.e(A.cu("Not authenticated"))
-p=A.dj("https://us-central1-portfolio-sarim.cloudfunctions.net/viewProject",0,null)
+p=A.dj("https://asia-south1-portfolio-sarim.cloudfunctions.net/viewProject",0,null)
 o=t.N
 n=A.ak(["X-User-Id",m,"Content-Type","application/json"],o,o)
 s=3
@@ -29712,7 +29712,7 @@ aMp(a,b,c){var s=0,r=A.y(t.H),q,p,o,n
 var $async$aMp=A.u(function(d,e){if(d===1)return A.v(e,r)
 for(;;)switch(s){case 0:n=A.la()
 if(n==null)throw A.e(A.cu("Not authenticated"))
-q=A.dj("https://us-central1-portfolio-sarim.cloudfunctions.net/messages",0,null)
+q=A.dj("https://asia-south1-portfolio-sarim.cloudfunctions.net/messages",0,null)
 p=t.N
 o=A.ak(["X-User-Id",n,"Content-Type","application/json"],p,p)
 s=2
