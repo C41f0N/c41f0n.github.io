@@ -1,0 +1,1 @@
+function e(){return typeof crypto?.randomUUID==`function`?crypto.randomUUID():`mock-${Date.now().toString(36)}-${Math.random().toString(36).slice(2,10)}`}function t(){let t=null;try{t=sessionStorage.getItem(`mock-uid`),t||(t=e(),sessionStorage.setItem(`mock-uid`,t))}catch{t=e()}return new Promise(e=>{setTimeout(()=>e(t),250+Math.random()*200)})}export{t as mockUserId};
