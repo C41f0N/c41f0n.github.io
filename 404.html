@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Loading…</title>
+    <script>
+      /*
+       * GitHub Pages serves this file for every path that is not a file on disk.
+       *
+       * The site is a client-side router, so `dist/` contains exactly one HTML
+       * file -- `index.html` -- and every other route the app knows about
+       * (`/projects`, `/posts/some-id`, ...) is a path that exists only inside the
+       * running app. Pages has no rewrite rules and no `try_files`, so it looks
+       * for a file at each path, finds none, and returns this. That is the whole
+       * of the 404: the app is fine, the host is answering a question about the
+       * filesystem that the filesystem cannot answer.
+       *
+       * The fix is the standard one for a static host with no rewrite
+       * configuration, and it has two halves that have to exist together:
+       *
+       *   1. This file. Record which URL was actually asked for, then send the
+       *      browser to the one real entry point.
+       *   2. `takeDeepLinkTarget()` in `src/main.tsx`. Read the record back and
+       *      `history.replaceState` to it *before* React renders, so
+       *      `BrowserRouter` reads the corrected URL on its first render.
+       *
+       * **The key below is duplicated in `src/main.tsx` and the two must match.**
+       * A `public/` file is copied to `dist/` verbatim -- Vite does not process
+       * it -- so there is no import and no constant to share, and a mismatch
+       * fails silently: the visitor simply lands on the home page.
+       *
+       * `location.replace('/')` is hardcoded to the site root, which is correct
+       * because the site is served from `c41f0n.github.io` with Vite's default
+       * `base: '/'` -- the same reason the built `index.html` can reference
+       * `/assets/...` absolutely. **Moving the site to a subpath means changing
+       * this string as well as `base`,** and a relative `'./'` is not the fix: it
+       * resolves against the *requested* path's directory, so `/posts/some-id`
+       * would redirect to `/posts/`.
+       *
+       * A relative redirect cannot work and a query-string hand-off would leak
+       * every deep link through a shared URL, so the record goes in
+       * `sessionStorage`: same-origin, per-tab, and read exactly once.
+       */
+      ;(function () {
+        var KEY = 'gh-pages-redirect'
+        try {
+          sessionStorage.setItem(KEY, location.pathname + location.search)
+        } catch (err) {
+          /*
+           * Storage disabled (private browsing, blocked third-party storage). The
+           * app still boots, at '/', so the visitor gets the home page instead of
+           * the page they asked for. Nothing to do about that without storage, and
+           * losing deep links is a far better outcome than an exception here,
+           * which would leave them on this page forever.
+           */
+        }
+        location.replace('/')
+      })()
+    </script>
+  </head>
+  <body style="margin: 0; background: #000">
+    <!--
+      Never seen in practice: `location.replace` runs before first paint. It is here
+      so the page is not a bare white flash if the script is blocked, and the
+      background matches `index.html`'s so the transition is not a colour jump.
+    -->
+    <p style="color: #888; font: 14px system-ui, sans-serif; padding: 2rem">
+      Redirecting…
+    </p>
+  </body>
+</html>
